@@ -10007,12 +10007,12 @@ p {
   }
 }
 ::-moz-selection {
-  background: red;
+  background: #d1c3c3;
   text-shadow: none;
 }
 
 ::selection {
-  background: red;
+  background: #d1c3c3;
   text-shadow: none;
 }
 
@@ -10168,6 +10168,16 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+section#about {
+  background: -webkit-gradient(linear, right top, right bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../assets/img/bk7.jfif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+  opacity: 100%;
+}
+
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
@@ -10252,6 +10262,11 @@ header.masthead .masthead-heading {
   opacity: 0.3;
 }
 
+#portfolio {
+  background: -webkit-gradient(linear, right top, right bottom, from(rgba(40, 40, 40, 0.3)), to(rgba(40, 40, 40, 0.3))), url("../../assets/img/cool-background (1).png") no-repeat center center fixed;
+  background-size: cover;
+}
+
 .timeline {
   position: relative;
   padding: 0;
@@ -10265,7 +10280,7 @@ header.masthead .masthead-heading {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: #ced4da;
 }
 .timeline > li {
   position: relative;
@@ -10307,7 +10322,7 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #ced4da;
   border-radius: 100%;
   background-color: red;
 }
@@ -10431,6 +10446,13 @@ header.masthead .masthead-heading {
 .team-member h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
+}
+
+section#team {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/img/bk3.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 50px 0 !important;
 }
 
 section#contact {

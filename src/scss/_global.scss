@@ -32,12 +32,12 @@ p {
 // Highlight color customization
 
 ::-moz-selection {
-    background: $primary;
+    background: rgb(209, 195, 195);
     text-shadow: none;
 }
 
 ::selection {
-    background: $primary;
+    background: rgb(209, 195, 195);
     text-shadow: none;
 }
 

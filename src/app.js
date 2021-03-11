@@ -41,7 +41,7 @@ app.get('/litere-volumetrice', async(req, res) => {
             }
             res.render('litere-volumetrice',
                 {
-                    photos: JSON.stringify(result),
+                    photos: result,
                     title: "Elderom-Litere-volumetrice"
                 })
 

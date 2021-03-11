@@ -44,7 +44,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#team') Echipamente
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='litere-volumetrice.html') Galerie
+                            a.nav-link.js-scroll-trigger(href='litere-volumetrice') Galerie
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
         // Masthead
@@ -61,7 +61,7 @@ html(lang='en')
                     each photo in photos
                         .col-lg-4.col-sm-6.mb-4
                             .portfolio-item
-                                -   var img = photo.path
+                                -   var img = '/assets' + photo.path
                                 -   var title = photo.title
                                 img.img-fluid(src=img, alt='')
                                 .portfolio-caption

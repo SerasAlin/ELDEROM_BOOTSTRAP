@@ -44,3 +44,16 @@ header.masthead {
         }
     }
 }
+
+section#about {
+    background: -webkit-gradient(linear, right top, right bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../assets/img/bk7.jfif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+    opacity: 100%;
+  }

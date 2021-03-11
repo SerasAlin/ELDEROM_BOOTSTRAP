@@ -12,3 +12,13 @@
         margin-bottom: 0;
     }
 }
+
+section#team{
+    background: rgb(255,255,255);
+    background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),url("../../assets/img/bk3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0 !important;
+  }

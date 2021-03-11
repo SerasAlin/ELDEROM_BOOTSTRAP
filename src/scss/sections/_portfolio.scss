@@ -88,3 +88,11 @@
         }
     }
 }
+
+#portfolio{
+    background: -webkit-gradient(linear, right top, right bottom, from(rgba(40, 40, 40, 0.3)), to(rgba(40, 40, 40, 0.3))), url("../../assets/img/cool-background (1).png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
