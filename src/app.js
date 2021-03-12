@@ -59,7 +59,7 @@ app.get('/mobilier-iluminare',async(req, res) => {
             }
             res.render('mobilier',
                 {
-                    data: result,
+                    photos: result,
                     title: "Elderom-Mobilier"
                 })
         });
@@ -76,7 +76,7 @@ app.get('/panouri-reclame', async(req, res) => {
             }
             res.render('reclame',
                 {
-                    data: result,
+                    photos: result,
                     title: "Elderom-Reclame"
                 })
         });
@@ -91,9 +91,9 @@ app.get('/standuri-expo-totemuri', async(req, res) => {
             if (err) {
                 return console.log(err)
             }
-            res.render('standuriExpo',
+            res.render('standuri-expo',
                 {
-                    data: result,
+                    photos: result,
                     title: "Elderom-Standuri-Expo"
                 })
         });
@@ -110,7 +110,7 @@ app.get('/unicate-diverse', async(req, res) => {
             }
             res.render('unicate',
                 {
-                    data: result,
+                    photos: result,
                     title: "Elderom-Unicate"
                 })
         });

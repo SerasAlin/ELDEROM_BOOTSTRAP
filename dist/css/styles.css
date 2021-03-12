@@ -10129,7 +10129,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 25, 27, 0.6)), to(rgba(36, 29, 29, 0.9))), url("../assets/img/header-bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 25, 27, 0.9)), to(rgba(36, 29, 29, 0.5))), url("../assets/img/bg-masthead.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10169,15 +10169,48 @@ header.masthead .masthead-heading {
   }
 }
 section#about {
-  background: -webkit-gradient(linear, right top, right bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../assets/img/bk7.jfif") no-repeat center center fixed;
+  background: -webkit-gradient(linear, right top, right bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../assets/img/bk8.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  width: 5%;
-  opacity: 100%;
+section#services {
+  background: -webkit-gradient(linear, right top, right bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../assets/img/bk8.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
+.imgCustom {
+  height: 70px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.btnCustom {
+  margin-bottom: 230px;
+  margin-top: 30px;
+}
+
+.imgNavbar {
+  height: 30px !important;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .imgCustom {
+    height: 100px;
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  .btnCustom {
+    margin-bottom: 140px;
+    margin-top: 30px;
+  }
+
+  .imgNavbar {
+    height: 40px !important;
+    width: auto;
+  }
+}
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
@@ -10263,7 +10296,7 @@ section#about {
 }
 
 #portfolio {
-  background: -webkit-gradient(linear, right top, right bottom, from(rgba(40, 40, 40, 0.3)), to(rgba(40, 40, 40, 0.3))), url("../../assets/img/cool-background (1).png") no-repeat center center fixed;
+  background: -webkit-gradient(linear, right top, right bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.9))), url("../../assets/img/portfolio.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -10450,7 +10483,7 @@ section#about {
 
 section#team {
   background: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/img/bk3.jpg") no-repeat center center fixed;
+  background: -webkit-gradient(linear, right top, right bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.9))), url("../../assets/img/portfolio.jpg") no-repeat center center fixed;
   background-size: cover;
   padding: 50px 0 !important;
 }

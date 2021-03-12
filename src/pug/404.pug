@@ -8,9 +8,9 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Agency - Start Bootstrap Theme
+        title Page Not Found
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='../assets/img/icon.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
@@ -28,31 +28,34 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='')
+                a.navbar-brand.js-scroll-trigger(href='/')
+                    img.imgNavbar(src='assets/img/logo_transparent2.png', alt='')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
+                    | Meniu
                     i.fas.fa-bars.ml-1
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#services') Servicii
+                            a.nav-link(href='/') Acasa
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#portfolio') Portofoliu
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') Despre
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#team') Echipamente
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='litere-volumetrice.html') Galerie
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#contact') Contact
+                            a.nav-link.js-scroll-trigger(href='litere-volumetrice') Galerie
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Welcome To Our Studio!
-                .masthead-heading.text-uppercase It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
+                .masthead-subheading Page not found!
+                .masthead-subheading Pagina nu a fost gasita!
+
+        // Footer
+        footer.footer.py-4
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-left
+                        | Copyright © S.C. ELDEROM IMPEX S.R.L. 2021
+                    .col-lg-4.my-3.my-lg-0
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-instagram
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-facebook-f
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')

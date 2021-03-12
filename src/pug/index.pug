@@ -13,9 +13,9 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Elderom
+        title Elderom Cluj-Napoca
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='../assets/img/icon.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
@@ -34,7 +34,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand.js-scroll-trigger(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='')
+                    img.imgNavbar(src='assets/img/logo_transparent2.png', alt='')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Meniu
                     i.fas.fa-bars.ml-1
@@ -49,7 +49,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#team') Echipamente
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='litere-volumetrice') Galerie
+                            a.nav-link(href='litere-volumetrice') Galerie
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
         // Masthead
@@ -57,13 +57,14 @@ html(lang='en')
             .container
                 .masthead-subheading Producție publicitară
                 .masthead-subheading Confecții metalice ușoare
-                .masthead-heading.text-uppercase ELDEROM IMPEX S.R.L.
-                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Află mai multe
+                .masthead-heading.text-uppercase S.C. ELDEROM IMPEX S.R.L.
+                a.btn.btnCustom.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Află mai multe
 
         // Services
         section#services.page-section
             .container
                 .text-center
+                    img.imgCustom(src='assets/img/logo_transparent2.png', alt='')
                     h2.section-heading.text-uppercase Servicii
                     h3.section-subheading.text-muted Standarde înalte de calitate
                 .row.text-center
@@ -98,137 +99,130 @@ html(lang='en')
                 .text-center
                     h2.section-heading.text-uppercase.text-white Portofoliu
                     h3.section-subheading.text-white Selecție de proiecte dezvoltate de-a lungul anilor
-                #carouselExample2.carousel.slide(data-ride='carousel')
-                    .carousel-inner
-                        .carousel-item.active
-                            .row
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/Totemuri/6.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading CREIC
-                                            .portfolio-caption-subheading.text-muted Totem
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/48.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Bombardier
-                                            .portfolio-caption-subheading.text-muted Litere Volumetrice
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/Unicate/12.jpg', alt='' style='height: 270px; width: 400px')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading IQuest
-                                            .portfolio-caption-subheading.text-muted Iluminare Atrium
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/27.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Betfair
-                                            .portfolio-caption-subheading.text-muted The Office Cluj-Napoca
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/23.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading NobilaCasa
-                                            .portfolio-caption-subheading.text-muted Cluj-Napoca
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/44.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Bosch
-                                            .portfolio-caption-subheading.text-muted Hala productie Blaj
-                        .carousel-item 
-                            .row                    
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal9')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/ReclameMici/20.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading TIFF
-                                            .portfolio-caption-subheading.text-muted Cluj-Napoca
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal7')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/NewPhotos/60.jpg', alt=''  style='height: 270px;')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Unicarm Supermarket
-                                            .portfolio-caption-subheading.text-muted Cluj si judetele limitrofe
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal11')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/StanduriExpo/15.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Romexpo Bucuresti
-                                            .portfolio-caption-subheading.text-muted Stand Expozitional
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal12')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/NewPhotos/74.jpg', alt='' style='height: 270px; width: 400px')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Copac fatada hostel
-                                            .portfolio-caption-subheading.text-muted Decor arhitectural
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal10')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/StanduriExpo/9.jpg', alt='')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Expozitor placi ceramice
-                                            .portfolio-caption-subheading.text-muted Cluj-Napoca
-                                .col-lg-4.col-sm-6.mb-4
-                                    .portfolio-item
-                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal8')
-                                            .portfolio-hover
-                                                .portfolio-hover-content
-                                                    i.fas.fa-plus.fa-3x
-                                            img.img-fluid(src='assets/img/portfolio/NewPhotos/51.jpg', alt='' style='height: 270px;')
-                                        .portfolio-caption
-                                            .portfolio-caption-heading Home Garden Supermarket
-                                            .portfolio-caption-subheading.text-muted Cluj-Napoca
-                    a.carousel-control-prev(href='#carouselExample2' role='button' data-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                    a.carousel-control-next(href='#carouselExample2' role='button' data-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/Totemuri/6.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading CREIC
+                                .portfolio-caption-subheading.text-muted Totem
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/48.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Bombardier
+                                .portfolio-caption-subheading.text-muted Litere Volumetrice
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/Unicate/12.jpg', alt='' style='height: 250px; width: 400px')
+                            .portfolio-caption
+                                .portfolio-caption-heading IQuest
+                                .portfolio-caption-subheading.text-muted Iluminare Atrium
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/27.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Betfair
+                                .portfolio-caption-subheading.text-muted The Office Cluj-Napoca
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/23.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading NobilaCasa
+                                .portfolio-caption-subheading.text-muted Cluj-Napoca
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/44.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Bosch
+                                .portfolio-caption-subheading.text-muted Hala productie Blaj
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal9')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/ReclameMici/20.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading TIFF
+                                .portfolio-caption-subheading.text-muted Cluj-Napoca
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal7')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/NewPhotos/60.jpg', alt=''  style='height: 250px;')
+                            .portfolio-caption
+                                .portfolio-caption-heading Unicarm Supermarket
+                                .portfolio-caption-subheading.text-muted Cluj si judetele limitrofe
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal11')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/StanduriExpo/15.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Romexpo Bucuresti
+                                .portfolio-caption-subheading.text-muted Stand Expozitional
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal12')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/NewPhotos/74.jpg', alt='' style='height: 250px; width: 400px')
+                            .portfolio-caption
+                                .portfolio-caption-heading Copac fatada hostel
+                                .portfolio-caption-subheading.text-muted Decor arhitectural
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal10')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/StanduriExpo/9.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Expozitor
+                                .portfolio-caption-subheading.text-muted Cluj-Napoca
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal8')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/NewPhotos/51.jpg', alt='' style='height: 250px;')
+                            .portfolio-caption
+                                .portfolio-caption-heading Home Garden
+                                .portfolio-caption-subheading.text-muted Cluj-Napoca
+                    .col-lg-12.text-center
+                        a#mainButton2.btn.btn-primary.btn-xl.js-scroll-trigger(href='litere-volumetrice') Galerie
+                    
         // About
         section#about.page-section
             .container
@@ -276,7 +270,13 @@ html(lang='en')
                             .timeline-body
                                 p.text-muted
                                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-
+                .col-lg-12.py-5
+                    .mb-5.text-center
+                        // Facebook
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-instagram
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-facebook-f
         // Team
         section#team.page-section.bg-light
             .container
@@ -322,20 +322,50 @@ html(lang='en')
         // Clients
         div.py-5
             .container
-                .row
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/envato.jpg', alt='')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/designmodo.jpg', alt='')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/themeforest.jpg', alt='')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/creative-market.jpg', alt='')
-
+                    #carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval="2000")
+                        .carousel-inner
+                            .carousel-item.active
+                                .row
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.aegon.ro/home/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/aegon.jpg', alt='' style='width: 100%;height: 50px; filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.betfair.ro/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/betfair.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.bfgoodrich.com/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bf.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://bombardier.com/en')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bombardier.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                            .carousel-item
+                                .row
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.bosch.com/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bosch.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.fotech.com/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/fortech.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.geberit.ro/ro/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/geberit.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.nagarro.com/en')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/iquest.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                            .carousel-item
+                                .row
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.kaufland.ro/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/kaufland.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.medicover.ro/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/medicover.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://www.nobilacasa.ro/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/nobilacasa.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                    .col-md-3.col-sm-6.my-3
+                                        a(href='https://unlimited.tiff.ro/')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/tiff.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
         // Contact
         section#contact.page-section
             .container
@@ -410,17 +440,22 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/01-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    h2.text-uppercase Creic Cluj-Napoca
+                                    p.item-intro.text-muted Centru Regional de Excelență pentru Industrii Creative
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/LitereVolumetrice/46.jpg', alt='')
+                                    p Un proiect complex datorită formei și dimensiunii totemului.
                                     ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Threads
-                                        li Category: Illustration
+                                        li Structura metalică de rezistență.
+                                        li Placare cu bond, cu atenție la detaliile de îmbinare.
+                                        li Litere volumetrice luminoase.
+                                        li Suport de steaguri profesionale.
+                                    ul.list-inline
+                                        li Data: Octombire 2016
+                                        li Client: Primăria Cluj-Napoca
+                                        li Categoria: Totemuri
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
-                                        | Close Project
+                                        | Închide
         // Modal 2
         #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
             .modal-dialog
@@ -432,17 +467,21 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/02-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    h2.text-uppercase Bombardier
+                                    p.item-intro.text-muted The Office Cluj-Napoca
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/LitereVolumetrice/42.jpg', alt='')
+                                    p Litere volumetrice luminoase
                                     ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Explore
-                                        li Category: Graphic Design
+                                        li Suport metalic pentru montaj.
+                                        li Litere executate integral din plexiglass.
+                                        li Iluminare cu bandă LED SMD.
+                                    ul.list-inline
+                                        li Data: Mai 2015
+                                        li Client: Bombardier
+                                        li Categoria: Litere Volumetrice
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
-                                        | Close Project
+                                        | Închide
         // Modal 3
         #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
             .modal-dialog
@@ -454,17 +493,21 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/03-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    h2.text-uppercase Iluminare Atrium
+                                    p.item-intro.text-muted Sistem de iluminare unicat
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/Mobilier/34.jpg', alt='')
+                                    p O provocare a tehnicii de iluminare datorită formei si dimensiunilor corpurilor de iluminat.
                                     ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Finish
-                                        li Category: Identity
+                                        li Față corpuri de iluminat - decupate laser după proiect execuție clădire.
+                                        li Sistem de montaj reglabil orizontal-vertical pentru aliniere cu tavanul.
+                                        li Iluminare cu module LED dimabile cu control digital al intensității luminoase.
+                                    ul.list-inline
+                                        li Data: Septembrie 2017
+                                        li Client: IQuest
+                                        li Categoria: Sisteme de Iluminare
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
-                                        | Close Project
+                                        | Închide
         // Modal 4
         #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
             .modal-dialog
@@ -476,17 +519,22 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/04-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    h2.text-uppercase Betfair
+                                    p.item-intro.text-muted The Office Cluj-Napoca
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/LitereVolumetrice/27.jpg', alt='')
+                                    p Litere volumetrice luminoase
                                     ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Lines
-                                        li Category: Branding
+                                        li Suport metalic pentru montaj.
+                                        li Litere executate din plexiglass si PVC.
+                                        li Iluminare cu bandă LED SMD.
+                                        li Outline luminos pe contur exterior.
+                                    ul.list-inline
+                                        li Data: Iunie 2015
+                                        li Client: Betfair
+                                        li Categoria: Litere Volumetrice
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
-                                        | Close Project
+                                        | Închide
         // Modal 5
         #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
             .modal-dialog
@@ -498,17 +546,22 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/05-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    h2.text-uppercase NobilaCasa
+                                    p.item-intro.text-muted Iuliu-Maniu, Cluj-Napoca
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/LitereVolumetrice/23.jpg', alt='')
+                                    p Litere volumetrice luminoase
                                     ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Southwest
-                                        li Category: Website Design
+                                        li Montaj individual pe fatada, distantat.
+                                        li Litere executate din PVC, opace.
+                                        li Iluminare cu bandă LED SMD.
+                                        li Iluminare cu efect Halo.
+                                    ul.list-inline
+                                        li Data: August 2014
+                                        li Client: Deco Center
+                                        li Categorie: Litere Volumetrice
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
-                                        | Close Project
+                                        |Închide
         // Modal 6
         #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
             .modal-dialog
@@ -520,17 +573,182 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/06-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    h2.text-uppercase Bosch
+                                    p.item-intro.text-muted Hala productie Blaj
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/LitereVolumetrice/44.jpg', alt='')
+                                    p Litere volumetrice luminoase
                                     ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Window
-                                        li Category: Photography
+                                        li Montaj individual pe fatada.
+                                        li Litere executate din Plexiglass si PVC.
+                                        li Iluminare cu module LED SMD.
+                                    ul.list-inline
+                                        li Data: Februarie 2018
+                                        li Client: Bosch Romania
+                                        li Categorie: Litere Volumetrice
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
-                                        | Close Project
+                                        | Închide
+        
+        // Modal 10
+        #portfolioModal10.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Expozitor placi ceramice
+                                    p.item-intro.text-muted Cluj-Napoca
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/StanduriExpo/9.jpg', alt='')
+                                    p Standuri Expozitoare
+                                    ul.list-inline
+                                        li Constructie metalica sudata.
+                                        li Capacitate incarcare 1000kg.
+                                        li Sistem de iluminare a panourilor placate.
+                                    ul.list-inline
+                                        li Data: Decembrie 2011
+                                        li Client: Sanex
+                                        li Categorie: Standuri Expozitoare
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Închide
+        // Modal 8
+        #portfolioModal8.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Home Gardem Supermarket
+                                    p.item-intro.text-muted str. Buna Ziua, Cluj-Napoca
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/NewPhotos/73.jpg', alt='')
+                                    p Semnalistica Exterioara
+                                    ul.list-inline
+                                        li Bandou perimetral din bond pe structura metalica.
+                                        li Litere volumetrice din plexiglass si PVC.
+                                        li Iluminare cu banda LED SMD.
+                                    ul.list-inline
+                                        li Data: Martie 2019
+                                        li Client: Home Garden
+                                        li Categorie: Semnalistica Exterioara
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Închide
+        // Modal 9
+        #portfolioModal9.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase TIFF
+                                    p.item-intro.text-muted Cluj-Napoca
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/ReclameMici/42.jpg', alt='')
+                                    p Cuburi luminoase
+                                    ul.list-inline
+                                        li Constructie integrala din plexiglass.
+                                        li Sistem de alimentare cu acumulator, autonomie 6 ore.
+                                        li Iluminare cu banda LED SMD.
+                                    ul.list-inline
+                                        li Data: Iunie 2017
+                                        li Client: TIFF Romania
+                                        li Categorie: Elemente de promovare luminoase
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Închide
+        // Modal 7
+        #portfolioModal7.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Unicarm Supermarket
+                                    p.item-intro.text-muted Cluj si judetele limitrofe
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/NewPhotos/72.jpg', alt='')
+                                    p Semnalistica Exterioara
+                                    ul.list-inline
+                                        li Bandou perimetral din bond pe structura de aluminiu.
+                                        li Caseta luminoasa din tabla de aluminiu decupata laser.
+                                        li Litere Volumetrice din plexiglass alb de 20mm inserate.
+                                        li Iluminare cu module LED waterproof.
+                                    ul.list-inline
+                                        li Data: Noiembrie 2020
+                                        li Client: Unicarm Romania
+                                        li Categorie: Semnalistica Exterioara
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Închide
+        // Modal 11
+        #portfolioModal11.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Stand Expozitional
+                                    p.item-intro.text-muted Romexpo Bucuresti
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/StanduriExpo/15.jpg', alt='')
+                                    p Stand Expozitional
+                                    ul.list-inline
+                                        li Suprafata stand 200mp cu etaj 100mp.
+                                        li Constructie metalica sudata.
+                                        li Placare cu gips-carton si placi ceramice.
+                                        li Expozitoare cu panouri mobile integrate.
+                                        li Sisteme de iluminare si de afisare.
+                                    ul.list-inline
+                                        li Data: Ianuarie 2013
+                                        li Client: Sanex
+                                        li Categorie: Standuri Expozitoare
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Închide
+        // Modal 12
+        #portfolioModal12.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Copac fatada hostel
+                                    p.item-intro.text-muted Cluj-Napoca
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/NewPhotos/74.jpg', alt='')
+                                    p Decor arhitectural
+                                    ul.list-inline
+                                        li Constructie modulara din HPL.
+                                        li Montaj pe suporti de inox.
+                                        li Iluminare perimetrala cu banda LED waterproof.
+                                        li Dimensiune 10m x 16m inaltime.
+                                    ul.list-inline
+                                        li Data: Februarie 2021
+                                        li Client: Doralex Cluj
+                                        li Categorie: Constructii arhitecturale
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Închide
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
