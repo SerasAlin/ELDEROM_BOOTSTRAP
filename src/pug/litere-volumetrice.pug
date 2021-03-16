@@ -47,23 +47,23 @@ html(lang='en')
                             a.nav-link(href='/unicate-diverse') Unicate
                         li.nav-item
                             a.nav-link(href='/') Acasa
-        // Masthead
-        header.masthead
-            .container
-                .masthead-subheading Galerie
-                .masthead-heading.text-uppercase(style = 'font-size:2.9rem') Litere Volumetrice
-                a.btn.btnCustom.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#portfolio' style = 'margin-bottom: 250px;') Vizionare
+        //-     // Masthead
+        //- header.masthead
+        //-     .container
+        //-         .masthead-subheading Galerie
+        //-         .masthead-heading.text-uppercase(style = 'font-size:2.9rem') Litere Volumetrice
+        //-         a.btn.btnCustom.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#portfolio' style = 'margin-bottom: 250px;') Vizionare
 
         // Portfolio Grid
-        section#portfolio.page-section.bg-light(style='background:none;')
-            .container
+        section#portfolio.page-section
+            .container(style="margin-top:50px")
                 .row
                     each photo in photos
                         .col-lg-4.col-sm-6.mb-4
                             .portfolio-item
                                 -   var img = '/assets' + photo.path
                                 -   var title = photo.title
-                                img.img-fluid(src=img, alt='' style='height:400px')
+                                img.img-fluid(src=img, alt='' style='height:340px')
                                 .portfolio-caption
                                     .portfolio-caption-heading.text-uppercase=title
 

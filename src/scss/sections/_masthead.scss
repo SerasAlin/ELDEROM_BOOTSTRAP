@@ -4,7 +4,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 25, 27, 0.9)), to(rgba(36, 29, 29, 0.5))), url("../assets/img/bg-masthead.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/bg-masthead.jpg");
     // background-image: url("../assets/img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -12,10 +12,10 @@ header.masthead {
     background-size: cover;
     .masthead-subheading {
         font-size: 1.5rem;
-        font-style: italic;
         line-height: 1.5rem;
         margin-bottom: 25px;
         font-family: $subheadings-font-family;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     }
     .masthead-heading {
         font-size: 3.25rem;
@@ -23,6 +23,7 @@ header.masthead {
         line-height: 3.25rem;
         margin-bottom: 2rem;
         font-family: $headings-font-family;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     }
 }
 
@@ -32,15 +33,17 @@ header.masthead {
         padding-bottom: 12.5rem;
         .masthead-subheading {
             font-size: 2.25rem;
-            font-style: italic;
             line-height: 2.25rem;
             margin-bottom: 2rem;
+            text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
         }
         .masthead-heading {
             font-size: 4.5rem;
             font-weight: 700;
             line-height: 4.5rem;
             margin-bottom: 4rem;
+            text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+            
         }
     }
 }
@@ -91,5 +94,20 @@ section#services {
         height: 40px !important;
         width: auto;
     }
+    .carousel-control-prev {
+        margin-left: -100px;
+      }
+      
+    .carousel-control-next {
+        margin-right: -100px;
+    }
 }
 
+.carousel-indicators {
+    bottom:-30px;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none;
+}

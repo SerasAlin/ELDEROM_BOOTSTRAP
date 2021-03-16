@@ -57,7 +57,7 @@ html(lang='en')
             .container
                 .masthead-subheading Producție publicitară
                 .masthead-subheading Confecții metalice ușoare
-                .masthead-heading.text-uppercase S.C. ELDEROM IMPEX S.R.L.
+                .masthead-heading.text-uppercase.cyber-text S.C. ELDEROM IMPEX S.R.L.
                 a.btn.btnCustom.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Află mai multe
 
         // Services
@@ -99,129 +99,152 @@ html(lang='en')
                 .text-center
                     h2.section-heading.text-uppercase.text-white Portofoliu
                     h3.section-subheading.text-white Selecție de proiecte dezvoltate de-a lungul anilor
+                #carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval="false")
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='3')
+                    .carousel-inner
+                        .carousel-item.active
+                            .row
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/Totemuri/6.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading CREIC
+                                            .portfolio-caption-subheading.text-muted Totem
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/48.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Bombardier
+                                            .portfolio-caption-subheading.text-muted Litere Volumetrice
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/Unicate/12.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading IQuest
+                                            .portfolio-caption-subheading.text-muted Iluminare Atrium
+                        .carousel-item
+                            .row
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/27.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Betfair
+                                            .portfolio-caption-subheading.text-muted The Office Cluj-Napoca
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/23.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading NobilaCasa
+                                            .portfolio-caption-subheading.text-muted Cluj-Napoca
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/44.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Bosch
+                                            .portfolio-caption-subheading.text-muted Hala productie Blaj
+                        .carousel-item
+                            .row
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal9')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/ReclameMici/20.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading TIFF
+                                            .portfolio-caption-subheading.text-muted Cluj-Napoca
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal7')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/NewPhotos/60.jpg', alt=''  style='height: 270px;')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Unicarm Supermarket
+                                            .portfolio-caption-subheading.text-muted Cluj si judetele limitrofe
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal11')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/StanduriExpo/15.jpg', alt='' style='height: 270px') 
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Romexpo Bucuresti
+                                            .portfolio-caption-subheading.text-muted Stand Expozitional
+                        .carousel-item
+                            .row                  
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal12')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/NewPhotos/74.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Copac fatada hostel
+                                            .portfolio-caption-subheading.text-muted Decor arhitectural
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal10')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/StanduriExpo/9.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Expozitor
+                                            .portfolio-caption-subheading.text-muted Cluj-Napoca
+                                .col-lg-4.col-sm-6.mb-4
+                                    .portfolio-item
+                                        a.portfolio-link(data-toggle='modal', href='#portfolioModal8')
+                                            .portfolio-hover
+                                                .portfolio-hover-content
+                                                    i.fas.fa-plus.fa-3x
+                                            img.img-fluid(src='assets/img/portfolio/NewPhotos/51.jpg', alt='' style='height: 270px')
+                                        .portfolio-caption
+                                            .portfolio-caption-heading Home Garden
+                                            .portfolio-caption-subheading.text-muted Cluj-Napoca     
+
+                    a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next    
                 .row
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/Totemuri/6.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading CREIC
-                                .portfolio-caption-subheading.text-muted Totem
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/48.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Bombardier
-                                .portfolio-caption-subheading.text-muted Litere Volumetrice
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/Unicate/12.jpg', alt='' style='height: 250px; width: 400px')
-                            .portfolio-caption
-                                .portfolio-caption-heading IQuest
-                                .portfolio-caption-subheading.text-muted Iluminare Atrium
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/27.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Betfair
-                                .portfolio-caption-subheading.text-muted The Office Cluj-Napoca
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/23.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading NobilaCasa
-                                .portfolio-caption-subheading.text-muted Cluj-Napoca
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/LitereVolumetrice/44.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Bosch
-                                .portfolio-caption-subheading.text-muted Hala productie Blaj
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal9')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/ReclameMici/20.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading TIFF
-                                .portfolio-caption-subheading.text-muted Cluj-Napoca
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal7')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/NewPhotos/60.jpg', alt=''  style='height: 250px;')
-                            .portfolio-caption
-                                .portfolio-caption-heading Unicarm Supermarket
-                                .portfolio-caption-subheading.text-muted Cluj si judetele limitrofe
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal11')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/StanduriExpo/15.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Romexpo Bucuresti
-                                .portfolio-caption-subheading.text-muted Stand Expozitional
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal12')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/NewPhotos/74.jpg', alt='' style='height: 250px; width: 400px')
-                            .portfolio-caption
-                                .portfolio-caption-heading Copac fatada hostel
-                                .portfolio-caption-subheading.text-muted Decor arhitectural
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal10')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/StanduriExpo/9.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Expozitor
-                                .portfolio-caption-subheading.text-muted Cluj-Napoca
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal8')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/NewPhotos/51.jpg', alt='' style='height: 250px;')
-                            .portfolio-caption
-                                .portfolio-caption-heading Home Garden
-                                .portfolio-caption-subheading.text-muted Cluj-Napoca
                     .col-lg-12.text-center
-                        a#mainButton2.btn.btn-primary.btn-xl.js-scroll-trigger(href='litere-volumetrice') Galerie
+                        a#mainButton2.btn.btn-primary.btn-xl.js-scroll-trigger(href='litere-volumetrice' style="margin-top:50px;") Galerie
+
                     
         // About
         section#about.page-section
@@ -283,89 +306,123 @@ html(lang='en')
                 .text-center
                     h2.section-heading.text-uppercase.text-white Echipamente
                     h3.section-subheading.text-white Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='https://images-na.ssl-images-amazon.com/images/I/61-2K3EXK3L._SX425_.jpg', alt='')
-                            h4.text-white Kay Garland
-                            p.text-white Lead Designer
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='https://images-na.ssl-images-amazon.com/images/I/61-2K3EXK3L._SX425_.jpg', alt='')
-                            h4.text-white Larry Parker
-                            p.text-white Lead Marketer
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='https://images-na.ssl-images-amazon.com/images/I/61-2K3EXK3L._SX425_.jpg', alt='')
-                            h4.text-white Diana Petersen
-                            p.text-white Lead Developer
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='https://images-na.ssl-images-amazon.com/images/I/61-2K3EXK3L._SX425_.jpg', alt='')
-                            h4.text-white Kay Garland
-                            p.text-white Lead Designer
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='https://images-na.ssl-images-amazon.com/images/I/61-2K3EXK3L._SX425_.jpg', alt='')
-                            h4.text-white Larry Parker
-                            p.text-white Lead Marketer
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='https://images-na.ssl-images-amazon.com/images/I/61-2K3EXK3L._SX425_.jpg', alt='')
-                            h4.text-white Diana Petersen
-                            p.text-white Lead Developer
-                .row
-                    .col-lg-8.mx-auto.text-center
-                        p.large.text-white
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                #carouselExampleIndicators2.carousel.slide(data-ride='carousel' data-interval="false")
+                    ol.carousel-indicators(style="bottom: -5px")
+                        li.active(data-target='#carouselExampleIndicators2' data-slide-to='0')
+                        li(data-target='#carouselExampleIndicators2' data-slide-to='1')
+                    .carousel-inner
+                        .carousel-item.active
+                            .row
+                                .col-lg-4
+                                    .team-member
+                                        img.mx-auto.rounded-circle(src='assets/img/team/cnc.jpg', alt='')
+                                        h4.text-white SL-CNC1325
+                                        br
+                                        p.text-white Prezinta ax de mare performanta cu sistem de racire cu apa.
+                                        p.text-white Controlul vitezei de procesare imbunatateste eficienta si calitatea prelucrarii si extinde durata de viata a uneltelor.
+                                        p.text-white Sina de glisare de inalta precizie
+                                        p.text-white Certificare CE, BV, ROHS
+                                .col-lg-4
+                                    .team-member
+                                        img.mx-auto.rounded-circle(src='assets/img/team/cnc.jpg', alt='')
+                                        h4.text-white SL-CNC1325
+                                        br
+                                        p.text-white Prezinta ax de mare performanta cu sistem de racire cu apa.
+                                        p.text-white Controlul vitezei de procesare imbunatateste eficienta si calitatea prelucrarii si extinde durata de viata a uneltelor.
+                                        p.text-white Sina de glisare de inalta precizie
+                                        p.text-white Certificare CE, BV, ROHS
+                                .col-lg-4
+                                    .team-member
+                                        img.mx-auto.rounded-circle(src='assets/img/team/cnc.jpg', alt='')
+                                        h4.text-white SL-CNC1325
+                                        br
+                                        p.text-white Prezinta ax de mare performanta cu sistem de racire cu apa.
+                                        p.text-white Controlul vitezei de procesare imbunatateste eficienta si calitatea prelucrarii si extinde durata de viata a uneltelor.
+                                        p.text-white Sina de glisare de inalta precizie
+                                        p.text-white Certificare CE, BV, ROHS
+                        .carousel-item    
+                            .row
+                                .col-lg-4
+                                    .team-member
+                                        img.mx-auto.rounded-circle(src='assets/img/team/cnc.jpg', alt='')
+                                        h4.text-white SL-CNC1325
+                                        br
+                                        p.text-white Prezinta ax de mare performanta cu sistem de racire cu apa.
+                                        p.text-white Controlul vitezei de procesare imbunatateste eficienta si calitatea prelucrarii si extinde durata de viata a uneltelor.
+                                        p.text-white Sina de glisare de inalta precizie
+                                        p.text-white Certificare CE, BV, ROHS
+                                .col-lg-4
+                                    .team-member
+                                        img.mx-auto.rounded-circle(src='assets/img/team/cnc.jpg', alt='')
+                                        h4.text-white SL-CNC1325
+                                        br
+                                        p.text-white Prezinta ax de mare performanta cu sistem de racire cu apa.
+                                        p.text-white Controlul vitezei de procesare imbunatateste eficienta si calitatea prelucrarii si extinde durata de viata a uneltelor.
+                                        p.text-white Sina de glisare de inalta precizie
+                                        p.text-white Certificare CE, BV, ROHS
+                                .col-lg-4
+                                    .team-member
+                                        img.mx-auto.rounded-circle(src='assets/img/team/cnc.jpg', alt='')
+                                        h4.text-white SL-CNC1325
+                                        br
+                                        p.text-white Prezinta ax de mare performanta cu sistem de racire cu apa.
+                                        p.text-white Controlul vitezei de procesare imbunatateste eficienta si calitatea prelucrarii si extinde durata de viata a uneltelor.
+                                        p.text-white Sina de glisare de inalta precizie
+                                        p.text-white Certificare CE, BV, ROHS
+                    a.carousel-control-prev(href='#carouselExampleIndicators2' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselExampleIndicators2' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next   
 
         // Clients
         div.py-5
             .container
-                    #carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval="2000")
+                    #carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval="3000")
                         .carousel-inner
                             .carousel-item.active
                                 .row
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.aegon.ro/home/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/aegon.jpg', alt='' style='width: 100%;height: 50px; filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/aegon.jpg', alt='' style='width: 100%;height: 50px; filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.betfair.ro/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/betfair.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/betfair.jpg', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.bfgoodrich.com/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bf.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bf.jpg', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://bombardier.com/en')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bombardier.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bombardier.png', alt='' style='width: 100%;height: 50px;filter:')
                             .carousel-item
                                 .row
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.bosch.com/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bosch.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/bosch.png', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.fotech.com/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/fortech.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/fortech.png', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.geberit.ro/ro/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/geberit.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/geberit.png', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.nagarro.com/en')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/iquest.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/iquest.png', alt='' style='width: 100%;height: 50px;filter:')
                             .carousel-item
                                 .row
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.kaufland.ro/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/kaufland.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/kaufland.png', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.medicover.ro/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/medicover.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/medicover.jpg', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://www.nobilacasa.ro/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/nobilacasa.jpg', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/nobilacasa.jpg', alt='' style='width: 100%;height: 50px;filter:')
                                     .col-md-3.col-sm-6.my-3
                                         a(href='https://unlimited.tiff.ro/')
-                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/tiff.png', alt='' style='width: 100%;height: 50px;filter: grayscale(100%);')
+                                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/tiff.png', alt='' style='width: 100%;height: 50px;filter:')
         // Contact
         section#contact.page-section
             .container
@@ -626,7 +683,7 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Home Gardem Supermarket
+                                    h2.text-uppercase Home Gardem Super-market
                                     p.item-intro.text-muted str. Buna Ziua, Cluj-Napoca
                                     img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/NewPhotos/73.jpg', alt='')
                                     p Semnalistica Exterioara
@@ -678,7 +735,7 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Unicarm Supermarket
+                                    h2.text-uppercase Unicarm Super-market
                                     p.item-intro.text-muted Cluj si judetele limitrofe
                                     img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/NewPhotos/72.jpg', alt='')
                                     p Semnalistica Exterioara
