@@ -1,0 +1,614 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Reclame | Panouri
+
+        link(rel='icon', type='image/x-icon', href='assets/img/icon.png')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top')
+                    img.imgNavbar(src='assets/img/logo_transparent2.png', alt='')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars.ml-1
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ml-auto
+                        li.nav-item
+                            a.nav-link(href='litere-volumetrice.html') Litere Volumetrice
+                        li.nav-item
+                            a.nav-link(href='panouri-reclame.html') Panouri Reclame
+                        li.nav-item
+                            a.nav-link(href='standuri-expo-totemuri.html') Standuri-Expoziție Totemuri
+                        li.nav-item
+                            a.nav-link(href='mobilier-iluminare.html') Mobilier Iluminare
+                        li.nav-item
+                            a.nav-link(href='unicate-diverse.html') Unicate
+                        li.nav-item
+                            a.nav-link(href='https://www.elderom.ro') Acasa
+        //- // Masthead
+        //- header.masthead
+        //-     .container
+        //-         .masthead-subheading Galerie
+        //-         .masthead-heading.text-uppercase(style = 'font-size:3rem') Reclame | Panouri
+        //-         a.btn.btnCustom.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#portfolio' style = 'margin-bottom: 250px;') Vizionare
+       
+        // Portfolio Grid
+        section#portfolio.page-section.galery
+            .container(style="margin-top:50px")
+                br
+                br
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/9.jpg'
+                            -   var title = 'salad bar&grill'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/30.jpg'
+                            -   var title = 'hidrant'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/14.jpg'
+                            -   var title = 'your watch'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/18.jpg'
+                            -   var title = 'nobilacasa'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/21.jpg'
+                            -   var title = 'cafeteriaSTC'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/26.jpg'
+                            -   var title = 'partener pramad'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/6.jpg'
+                            -   var title = 'farmacie'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/7.jpg'
+                            -   var title = 'kaufland'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/25.jpg'
+                            -   var title = 'licori si tabieturi'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/41.jpg'
+                            -   var title = 'river cafe'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/29.jpg'
+                            -   var title = 'river cafe'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/3.jpg'
+                            -   var title = 'aegon'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/1.jpg'
+                            -   var title = 'CIA Aboliv'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/5.jpg'
+                            -   var title = 'cameea'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/8.jpg'
+                            -   var title = 'atentie scari'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/11.jpg'
+                            -   var title = 'tube'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/15.jpg'
+                            -   var title = 'medios'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/17.jpg'
+                            -   var title = 'pay&go'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/12.jpg'
+                            -   var title = 'korado'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/40.jpg'
+                            -   var title = 'cutie donatii'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/10.jpg'
+                            -   var title = 'kaufland'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/2.jpg'
+                            -   var title = 'aegon'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/3.jpg'
+                            -   var title = 'magazin alimentar'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/24.jpg'
+                            -   var title = 'michelin'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/36.jpg'
+                            -   var title = 'nobilacasa'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/6.jpg'
+                            -   var title = 'kaufland'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/27.jpg'
+                            -   var title = 'haine import'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/28.jpg'
+                            -   var title = 'pensiunea verona'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/10.jpg'
+                            -   var title = 'semnalizator etaj'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/4.jpg'
+                            -   var title = 'catena'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/22.jpg'
+                            -   var title = 'star transmission'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/34.jpg'
+                            -   var title = 'cutie donatii'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/9.jpg'
+                            -   var title = 'artisan'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/11.jpg'
+                            -   var title = 'Artfil'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/39.jpg'
+                            -   var title = 'suport sticle'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/13.jpg'
+                            -   var title = 'michal negrin'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/20.jpg'
+                            -   var title = 'tiff'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/31.jpg'
+                            -   var title = 'diesel'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/35.jpg'
+                            -   var title = 'banca tiriac'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/38.jpg'
+                            -   var title = 'suport meniu'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/7.jpg'
+                            -   var title = 'edmond nicolau'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/16.jpg'
+                            -   var title = 'cleanandgo'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/23.jpg'
+                            -   var title = 'so or'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/5.jpg'
+                            -   var title = 'elta'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMari/8.jpg'
+                            -   var title = 'nobilacasa'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/4.jpg'
+                            -   var title = 'jolidon'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/1.jpg'
+                            -   var title = 'adormed'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/2.jpg'
+                            -   var title = 'tabita tour'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/19.jpg'
+                            -   var title = 'claritate'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/32.jpg'
+                            -   var title = 'cosmo'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/33.bmp'
+                            -   var title = 'fero select'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/ReclameMici/37.jpg'
+                            -   var title = 'suport plexic'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/4.jpg'
+                            -   var title = 'simacek'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/6.jpg'
+                            -   var title = 'panouri diverse'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/7.jpg'
+                            -   var title = 'evoline'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/11.jpg'
+                            -   var title = 'powerbelt'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/15.jpg'
+                            -   var title = 'bosch'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/19.jpg'
+                            -   var title = 'parcare privata'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/20.jpg'
+                            -   var title = 'panou bosch'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/3.jpg'
+                            -   var title = 'powerbelt'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/8.jpg'
+                            -   var title = 'atentie pericol'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/16.jpg'
+                            -   var title = 'rexroth'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/1.jpg'
+                            -   var title = 'transavia'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/5.jpg'
+                            -   var title = 'bardi auto'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/2.jpg'
+                            -   var title = 'fragedo'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/18.jpg'
+                            -   var title = 'panou informatii'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/13.jpg'
+                            -   var title = 'panou decorativ'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/14.jpg'
+                            -   var title = 'decor untold'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/10.jpg'
+                            -   var title = 'panou reclame'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/21.jpg'
+                            -   var title = 'sanex'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/12.jpg'
+                            -   var title = 'panou decorativ'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/8.jpg'
+                            -   var title = 'zona controlata'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/17.jpg'
+                            -   var title = 'shil market'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/Panouri/22.jpg'
+                            -   var title = 'amplexor'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                                                            
+
+        // Footer
+        footer.footer.py-4
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-left
+                        | Copyright © S.C. ELDEROM IMPEX S.R.L. 2021
+                    .col-lg-4.my-3.my-lg-0
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-instagram
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-facebook-f
+                            
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Contact form JS
+        script(src='assets/mail/jqBootstrapValidation.js')
+        script(src='assets/mail/contact_me.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')

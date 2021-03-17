@@ -10,7 +10,7 @@ html(lang='en')
 
         title Litere Volumetrice
 
-        link(rel='icon', type='image/x-icon', href='../assets/img/icon.png')
+        link(rel='icon', type='image/x-icon', href='assets/img/icon.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
@@ -36,17 +36,17 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
-                            a.nav-link(href='/litere-volumetrice') Litere Volumetrice
+                            a.nav-link(href='litere-volumetrice.html') Litere Volumetrice
                         li.nav-item
-                            a.nav-link(href='/panouri-reclame') Panouri Reclame
+                            a.nav-link(href='panouri-reclame.html') Panouri Reclame
                         li.nav-item
-                            a.nav-link(href='/standuri-expo-totemuri') Standuri-Expoziție Totemuri
+                            a.nav-link(href='standuri-expo-totemuri.html') Standuri-Expoziție Totemuri
                         li.nav-item
-                            a.nav-link(href='/mobilier-iluminare') Mobilier Iluminare
+                            a.nav-link(href='mobilier-iluminare.html') Mobilier Iluminare
                         li.nav-item
-                            a.nav-link(href='/unicate-diverse') Unicate
+                            a.nav-link(href='unicate-diverse.html') Unicate
                         li.nav-item
-                            a.nav-link(href='/') Acasa
+                            a.nav-link(href='https://www.elderom.ro') Acasa
         //-     // Masthead
         //- header.masthead
         //-     .container
@@ -55,18 +55,509 @@ html(lang='en')
         //-         a.btn.btnCustom.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#portfolio' style = 'margin-bottom: 250px;') Vizionare
 
         // Portfolio Grid
-        section#portfolio.page-section
+        section#portfolio.page-section.galery
             .container(style="margin-top:50px")
+                br
+                br
                 .row
-                    each photo in photos
-                        .col-lg-4.col-sm-6.mb-4
-                            .portfolio-item
-                                -   var img = '/assets' + photo.path
-                                -   var title = photo.title
-                                img.img-fluid(src=img, alt='' style='height:340px')
-                                .portfolio-caption
-                                    .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/24.jpg'
+                            -   var title = 'iquest'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title             
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/26.jpg'
+                            -   var title = 'theoffice cluj-napoca'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/27.jpg'
+                            -   var title = 'betfair'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/28.jpg'
+                            -   var title = 'nobilacasa'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/32.jpg'
+                            -   var title = 'nobilacasa'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/45.jpg'
+                            -   var title = 'MBIBank'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title     
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/5.jpg'
+                            -   var title = 'Pensiunea Verona'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title                                          
 
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/8.jpg'
+                            -   var title = 'Salon la Grande'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/29.jpg'
+                            -   var title = 'Photos'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/42.jpg'
+                            -   var title = 'Bombardier'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/20.jpg'
+                            -   var title = 'RayMedica'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/22.jpg'
+                            -   var title = 'NeverFail'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/38.jpg'
+                            -   var title = 'MBIBANK'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title         
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/31.jpg'
+                            -   var title = 'IQuest'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/36.jpg'
+                            -   var title = 'Concert Voltaj'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/46.jpg'
+                            -   var title = 'Creic'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/3.jpg'
+                            -   var title = 'BFGoodrich'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/35.jpg'
+                            -   var title = 'Jucarii Cosmetice'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/44.jpg'
+                            -   var title = 'Bosch'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/6.jpg'
+                            -   var title = 'City Moonmarket'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title         
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/4.jpg'
+                            -   var title = 'Centogroup'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                .portfolio-caption-heading.text-uppercase=title    
+    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/21.jpg'
+                            -   var title = 'Decocenter'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/10.jpg'
+                            -   var title = 'G&D'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/9.jpg'
+                            -   var title = 'G&D'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/39.jpg'
+                            -   var title = 'Memo10'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/43.jpg'
+                            -   var title = 'Nobilacasa'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/7.jpg'
+                            -   var title = 'Premuim'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title         
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/13.jpg'
+                            -   var title = 'Seisha bar cafe'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/16.jpg'
+                            -   var title = 'Bosch'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/12.jpg'
+                            -   var title = 'MedPrime DentalClinic'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/34.jpg'
+                            -   var title = 'Nobilacasa'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/19.jpg'
+                            -   var title = 'Medicover'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/2.jpg'
+                            -   var title = 'StarAssembly'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/1.jpg'
+                            -   var title = 'FactoryShop'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title         
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/40.jpg'
+                            -   var title = 'Betfair'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/37.jpg'
+                            -   var title = 'StarTransmission'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/47.jpg'
+                            -   var title = 'SalonConfort'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/14.jpg'
+                            -   var title = 'Seisha bar cafe'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/18.jpg'
+                            -   var title = 'Hasna'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/30.jpg'
+                            -   var title = 'Comau'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/33.jpg'
+                            -   var title = 'PowerBelt'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title         
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/41.jpg'
+                            -   var title = 'Aegon'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/11.jpg'
+                            -   var title = 'SalonConfort'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/17.jpg'
+                            -   var title = 'Fortech'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/15.jpg'
+                            -   var title = 'Bosch'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/LitereVolumetrice/25.jpg'
+                            -   var title = 'NestofAngels'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/55.jpg'
+                            -   var title = 'medical center'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/51.jpg'
+                            -   var title = 'supermarket'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title         
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/56.jpg'
+                            -   var title = 'hydroscand'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title     
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/49.jpg'
+                            -   var title = 'supermarket'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title      
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/69.jpg'
+                            -   var title = 'cantina primariei'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/61.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/70.jpg'
+                            -   var title = 'blade'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/57.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/50.jpg'
+                            -   var title = 'supermarket'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/66.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title         
+
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/68.jpg'
+                            -   var title = 'litere volumetrice'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title      
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/59.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/60.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/54.jpg'
+                            -   var title = 'garaj spalatorie auto'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/64.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/71.jpg'
+                            -   var title = '15 fortech'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/52.jpg'
+                            -   var title = 'supermarket'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title                                                                    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/62.jpg'
+                            -   var title = 'geberit'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title      
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/48.jpg'
+                            -   var title = 'supermarket'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/58.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/67.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/53.jpg'
+                            -   var title = 'supermarket'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/63.jpg'
+                            -   var title = 'sky-events'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title    
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            -   var img = 'assets/img/portfolio/NewPhotos/65.jpg'
+                            -   var title = 'unicarm'
+                            img.img-fluid(src=img, alt='' style='height:340px')
+                            .portfolio-caption
+                                    .portfolio-caption-heading.text-uppercase=title        
         // Footer
         footer.footer.py-4
             .container

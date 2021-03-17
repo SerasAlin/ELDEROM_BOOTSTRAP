@@ -3,9 +3,8 @@
     margin-bottom: 3rem;
     text-align: center;
     img {
-        width: 22rem;
-        height: 22rem;
-        border: 0.5rem solid fade-out($black, 0.9);
+        height: 270px;
+        max-width: auto;
     }
     h4 {
         margin-top: 1.5rem;
@@ -15,7 +14,7 @@
 
 section#team{
     background: rgb(255,255,255);
-    background: -webkit-gradient(linear, right top, right bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.9))), url("../../assets/img/portfolio.jpg") no-repeat center center fixed;
+    background: -webkit-gradient(linear, right top, right bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.9))), url("../assets/img/portfolio.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

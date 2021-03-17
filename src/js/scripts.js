@@ -59,7 +59,6 @@
     url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
     // select file name
     url = url.substr(url.lastIndexOf("/") + 1)
-    url = '/' + url;
     // If file name not avilable
     if(url == ''){
     url = '/';
